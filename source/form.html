@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Подбор программы</title>
+  </head>
+  <body class="page__body">
+
+    <header class="main-header">
+      <a class="logo">
+        <img class="navigation-logo" src="img/icon-logo.svg" width="33" height="37" alt="котик.">
+      </a>
+      <a class="main-header__logo">
+        <img class="cat-logo" src="img/icon-cat-energy.svg" width="101" height="18" alt="Кэт энерджи.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="form.html">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="main-container__title">Подбор программы</h1>
+      <b class="main-container__description">Заполните анкету, и мы подберем программу питания для вашего кота</b>
+      <form class="auntification-form" action="https://echo.htmlacademy.ru/" method="post" >
+        <fieldset class="base-groop">
+          <legend class="visually-hidden">Базовые данные</legend>
+          <ul class="base-groop__list">
+            <li class="base-groop__item">
+              <label for="name" class="base-groop__label">ИМЯ:*</label>
+              <input class="base-groop__input" type="text" value="Барсик" id="name" name="name" required>
+            </li>
+            <li class="base-groop__item">
+              <label for="weight" class="base-groop__label">Вес (кг):*</label>
+              <input class="base-groop__input" type="text" value="7" id="weight" name="weight" required>
+            </li>
+            <li class="base-groop__item">
+              <label for="age" class="base-groop__label">Возраст (лет):</label>
+              <input class="base-groop__input" type="text" value="7" id="age" name="age">
+            </li>
+          </ul>
+          <ul class="base-groop__list">
+            <li class="base-groop__item">
+              <label class="base-groop__label">
+                <input class="base-groop__input base-groop__input--radio" type="radio" name="option" value="thin" checked>
+                <span class="base-groop__description" >похудение</span>
+                <span class="castom-radio"></span> <!-- span для кастомных radio-->
+              </label>
+            </li>
+            <li class="base-groop__item">
+              <label class="base-groop__label">
+                <input class="base-groop__input base-groop__input--radio" type="radio" name="option" value="fat" >
+                <span class="base-groop__description" >Набор массы</span>
+                <span class="castom-radio"></span> <!-- span для кастомных radio-->
+              </label>
+            </li>
+            <li class="base-groop__item">
+              <label class="base-groop__label">
+                <input class="base-groop__input base-groop__input--radio" type="radio" name="option" value="unknown">
+                <span class="base-groop__description" >Не знаю (Нужен ваш совет)</span>
+                <span class="castom-radio"></span> <!-- span для кастомных radio-->
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contacts-groop">
+          <legend class="contacts-groop__title">Контактные данные (владельца кота)</legend>
+          <ul class="contacts-groop__list">
+            <li class="contacts-groop__item">
+              <label for="contacts-email" class="contacts-groop__label">E-mail:*</label>
+              <input class="contacts-groop__input" type="email" id="contacts-email" name="contacts-email" value="kuklachev@gmail.com" required>
+            </li>
+            <li class="contacts-groop__item">
+              <label class="contacts-groop__label" for="contacts-phone">Телефон:*</label>
+              <input class="contacts-groop__input" type="tel" id="contacts-phone" name="contacts-phone" value="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="coments-groop">
+          <legend class="coments-groop__title" id="f">Комментарий</legend>
+          <textarea class="coments-groop__textarea" name="coment" cols="20" rows="5">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+        <fieldset class="extra-groop">
+          <legend class="extra-groop__title">Дополнительно</legend>
+          <ul class="extra-groop__list">
+            <li class="extra-groop__item">
+              <label class="extra-groop__label">
+                <input class="extra-groop__input extra-groop__input--checkbox" type="checkbox" name="option" checked>
+                <span class="extra-groop__description" >сахарозаменитель</span>
+                <span class="castom-checkbox"></span> <!-- span для кастомных checkbox-->
+              </label>
+            </li>
+            <li class="extra-groop__item">
+              <label class="extra-groop__label">
+                <input class="extra-groop__input extra-groop__input--checkbox" type="checkbox" name="option">
+                <span class="extra-groop__description" >питьевая вода</span>
+                <span class="castom-checkbox"></span> <!-- span для кастомных checkbox-->
+              </label>
+            </li>
+            <li class="extra-groop__item">
+              <label class="extra-groop__label">
+                <input class="extra-groop__input extra-groop__input--checkbox" type="checkbox" name="option">
+                <span class="extra-groop__description" >молоко</span>
+                <span class="castom-checkbox"></span> <!-- span для кастомных checkbox-->
+              </label>
+            </li>
+            <li class="extra-groop__item">
+              <label class="extra-groop__label">
+                <input class="extra-groop__input extra-groop__input--checkbox" type="checkbox" name="option">
+                <span class="extra-groop__description" >витамины</span>
+                <span class="castom-checkbox"></span> <!-- span для кастомных checkbox-->
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="auntification-form__button" type="submit">отправить заявку</button>
+        <p class="auntification-form__required">* — Обязательные поля</p>
+      </form>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <section class="main-footer__contacts contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </section>
+        <section class="main-footer__company">
+          <h2 class="visually-hidden">Кэт энерджи</h2>
+          <a class="main-footer__logo" href="index.html">
+            <img class="cat-logo" src="img/icon-cat-energy.svg" width="101" height="18" alt="Кэт энерджи.">
+          </a>
+        </section>
+        <section class="main-footer__social social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="main-footer__copyright copyright">
+          <h2 class="visually-hidden">Разработано</h2>
+          <a class="copyright__link" href="https://htmlacademy.ru/">
+            <img class="copyright-academy" src="img/icon-HTML-Academy.svg"  width="114" height="18" alt="Логотип академии.">
+          </a>
+          <a class="copyright__link" href="https://htmlacademy.ru/">
+            <img class="copyright-logo" src="img/icon-htmlacademy.svg"  width="27" height="34" alt="Логотип академии.">
+          </a>
+        </section>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
