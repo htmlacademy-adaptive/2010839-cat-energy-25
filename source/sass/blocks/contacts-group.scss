@@ -2,8 +2,8 @@
   border: none;
 }
 
-.contacts-group__title{
-  @include form-group-title
+.contacts-group__title {
+  @include form-group-title;
 }
 
 .contacts-group__list {
@@ -11,17 +11,16 @@
 }
 
 .contacts-group__label {
-  color: $form-text-first;
   @include data-form-text;
+  color: $form-text-first;
 }
 
 .contacts-group__description {
-  color: $form-text-second;
   @include data-form-text;
+  color: $form-text-second;
 }
 
 .contacts-group__input {
-  color: $form-text-first;
   @include data-form-text;
+  color: $form-text-first;
 }
-
