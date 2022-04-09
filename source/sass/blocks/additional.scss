@@ -1,0 +1,15 @@
+.additional__item {
+  list-style-type: none;
+}
+
+.additional__title {
+  @include additional-title;
+}
+
+.additional__size {
+  @include additional-text;
+}
+
+.additional__price {
+  @include additional-text;
+}

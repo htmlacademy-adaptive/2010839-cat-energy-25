@@ -1,0 +1,21 @@
+.contacts {
+  display: flex;
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $Oswald;
+  color: $form-text-third;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $Arial;
+  color: $form-text-first;
+  margin: 0;
+}

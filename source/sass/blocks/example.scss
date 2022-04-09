@@ -1,0 +1,17 @@
+.example {
+  background-color: $second-color;
+  border: none;
+}
+
+.example__description {
+  @include index-text;
+  margin: 0;
+}
+
+.example__result {
+  font-family: $Oswald;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

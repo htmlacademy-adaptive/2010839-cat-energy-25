@@ -1,0 +1,12 @@
+.data-form__button {
+  @include button;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.data-form__required {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $Arial;
+  font-weight: 400;
+}

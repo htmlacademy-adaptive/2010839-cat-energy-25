@@ -1,0 +1,27 @@
+.main-container {
+
+}
+
+.main-container__title-index {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.main-container__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.main-container__description-index {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-container__description {
+  @include data-form-text;
+}
+
