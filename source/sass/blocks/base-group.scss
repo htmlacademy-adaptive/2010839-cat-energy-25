@@ -7,16 +7,16 @@
 }
 
 .base-group__label {
-  color: $form-text-first;
   @include data-form-text;
+  color: $form-text-first;
 }
 
 .base-group__description {
-  color: $form-text-second;
   @include data-form-text;
+  color: $form-text-second;
 }
 
 .base-group__input {
-  color: $form-text-first;
   @include data-form-text;
+  color: $form-text-first;
 }
