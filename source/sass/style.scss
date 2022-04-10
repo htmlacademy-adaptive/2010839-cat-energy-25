@@ -1,7 +1,4 @@
-// Начните писать стили здесь
-
-
-// цвета
+// переменные
 
 @import "./blocks/variables.scss";
 
@@ -26,32 +23,24 @@
 // header
 
 @import "./blocks/main-header.scss";
-@import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
 
 // main
 
 @import "./blocks/main-container.scss";
 @import "./blocks/cat-wraper.scss";
-@import "./blocks/program.scss";
 @import "./blocks/program-list.scss";
 @import "./blocks/program-item.scss";
-@import "./blocks/process.scss";
 @import "./blocks/section-title.scss";
 @import "./blocks/process-list.scss";
 @import "./blocks/process-item.scss";
-@import "./blocks/range-section.scss";
-@import "./blocks/example-form.scss";
 @import "./blocks/example.scss";
 @import "./blocks/example-filter-label.scss";
-@import "./blocks/range-input.scss";
 @import "./blocks/range.scss";
 @import "./blocks/range-scale.scss";
 @import "./blocks/range-bar.scss";
 @import "./blocks/range-toggle.scss";
-@import "./blocks/toggle-min.scss";
 @import "./blocks/toggle-current.scss";
-@import "./blocks/toggle-max.scss";
 
 // main form
 
@@ -63,7 +52,6 @@
 
 // main  catalog
 
-@import "./blocks/catalog-list.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/card-options.scss";
 @import "./blocks/catalog-option.scss";
@@ -72,8 +60,6 @@
 
 // footer
 
-@import "./blocks/main-footer.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
-@import "./blocks/copyright-academy.scss";
