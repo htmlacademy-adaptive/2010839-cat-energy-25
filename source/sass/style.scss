@@ -1,1 +1,65 @@
-// Начните писать стили здесь
+// переменные
+
+@import "./blocks/variables.scss";
+
+// шрифты
+
+@import "./blocks/font-face.scss";
+
+// hidden
+
+@import "./blocks/visually-hidden.scss";
+
+// кнопки
+
+@import "./blocks/button-show-more.scss";
+@import "./blocks/button-program.scss";
+@import "./blocks/button-order.scss";
+
+// page
+
+@import "./blocks/page.scss";
+
+// header
+
+@import "./blocks/main-header.scss";
+@import "./blocks/site-list.scss";
+
+// main
+
+@import "./blocks/main-container.scss";
+@import "./blocks/cat-wraper.scss";
+@import "./blocks/program-list.scss";
+@import "./blocks/program-item.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/process-list.scss";
+@import "./blocks/process-item.scss";
+@import "./blocks/example.scss";
+@import "./blocks/example-filter-label.scss";
+@import "./blocks/range.scss";
+@import "./blocks/range-scale.scss";
+@import "./blocks/range-bar.scss";
+@import "./blocks/range-toggle.scss";
+@import "./blocks/toggle-current.scss";
+
+// main form
+
+@import "./blocks/data-form.scss";
+@import "./blocks/base-group.scss";
+@import "./blocks/contacts-group.scss";
+@import "./blocks/comments-group.scss";
+@import "./blocks/extra-group.scss";
+
+// main  catalog
+
+@import "./blocks/product-card.scss";
+@import "./blocks/card-options.scss";
+@import "./blocks/catalog-option.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/catalog-gift.scss";
+
+// footer
+
+@import "./blocks/contacts.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";

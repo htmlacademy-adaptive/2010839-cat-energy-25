@@ -1,0 +1,23 @@
+.program-item {
+  background-color: $second-color;
+}
+
+.program-item__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  font-family: $Oswald;
+  text-transform: uppercase;
+}
+
+.program-item__description {
+  @include index-text;
+  margin: 0;
+}
+
+.program-item__button {
+  color: $color-text-second;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+}

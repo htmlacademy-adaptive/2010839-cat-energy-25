@@ -1,0 +1,12 @@
+.site-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: $color-text-second;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}

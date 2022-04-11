@@ -1,0 +1,22 @@
+.base-group {
+  border: none;
+}
+
+.base-group__list {
+  list-style-type: none;
+}
+
+.base-group__label {
+  @include data-form-text;
+  color: $form-text-first;
+}
+
+.base-group__description {
+  @include data-form-text;
+  color: $form-text-second;
+}
+
+.base-group__input {
+  @include data-form-text;
+  color: $form-text-first;
+}

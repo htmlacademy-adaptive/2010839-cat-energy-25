@@ -1,0 +1,26 @@
+.contacts-group {
+  border: none;
+}
+
+.contacts-group__title {
+  @include form-group-title;
+}
+
+.contacts-group__list {
+  list-style-type: none;
+}
+
+.contacts-group__label {
+  @include data-form-text;
+  color: $form-text-first;
+}
+
+.contacts-group__description {
+  @include data-form-text;
+  color: $form-text-second;
+}
+
+.contacts-group__input {
+  @include data-form-text;
+  color: $form-text-first;
+}

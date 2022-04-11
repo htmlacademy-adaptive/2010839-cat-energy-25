@@ -1,0 +1,7 @@
+.button-program {
+  @include button;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: $Oswald;
+}

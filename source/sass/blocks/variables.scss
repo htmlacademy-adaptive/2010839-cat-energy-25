@@ -1,0 +1,82 @@
+$color-text-first: #ffffff;
+$color-text-second: #000000;
+
+$form-text-first: #444444;
+$form-text-second: #222222;
+$form-text-third: #111111;
+
+$base-color: #ffffff;
+$first-color: #68b738;
+$second-color: #f2f2f2;
+$third-color: #eaeaea;
+$fourth-color: #000000;
+
+$Oswald: "Oswald", sans-serif;
+$Arial: "Arial", sans-serif;
+
+@mixin index-text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+@mixin data-form-text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+@mixin form-group-title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@mixin button {
+  background-color: #68b738;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+}
+
+@mixin product-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+@mixin catalog-card-options {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+@mixin additional-title {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+@mixin additional-text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}

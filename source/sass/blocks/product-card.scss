@@ -1,0 +1,15 @@
+.product-card {
+  list-style-type: none;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  @include product-title;
+}
+
+.product-card__description {
+  @include catalog-card-options;
+}

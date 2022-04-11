@@ -1,0 +1,12 @@
+.comments-group {
+  border: none;
+}
+
+.comments-group__title {
+  @include form-group-title;
+}
+
+.comments-group__textarea {
+  @include data-form-text;
+  color: $form-text-first;
+}

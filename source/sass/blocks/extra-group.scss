@@ -1,0 +1,16 @@
+.extra-group {
+  border: none;
+}
+
+.extra-group__title {
+  @include form-group-title;
+}
+
+.extra-group__description {
+  @include data-form-text;
+  color: $color-text-second;
+}
+
+.extra-group__list {
+  list-style-type: none;
+}
