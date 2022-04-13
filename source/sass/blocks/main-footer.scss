@@ -1,0 +1,41 @@
+.main-footer {
+  margin-top: 10px;
+}
+
+.main-footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  background-color: $second-color;
+}
+
+.main-footer__company {
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__social {
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__copyright {
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    width: 708px;
+  }
+
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    width: 1220px;
+  }
+}
+

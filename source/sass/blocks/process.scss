@@ -1,0 +1,30 @@
+.process {
+  margin: 20px 0 0 0;
+}
+
+.process__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .process {
+    margin: 45px 0 0 0;
+  }
+
+  .process__wrapper {
+    width: 633px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .process {
+    margin: 71px 0 0 0;
+  }
+
+  .process__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

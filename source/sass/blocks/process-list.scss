@@ -1,8 +1,21 @@
 .process-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   list-style-type: none;
   margin: 0;
   padding: 0;
   font-family: $Arial;
+}
+
+@media (min-width: $tablet-width) {
+  .process-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .process-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }

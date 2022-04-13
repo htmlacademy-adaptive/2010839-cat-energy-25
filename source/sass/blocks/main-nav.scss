@@ -1,0 +1,12 @@
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 440px;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

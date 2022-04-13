@@ -1,3 +1,5 @@
+// Colors
+
 $color-text-first: #ffffff;
 $color-text-second: #000000;
 
@@ -11,8 +13,17 @@ $second-color: #f2f2f2;
 $third-color: #eaeaea;
 $fourth-color: #000000;
 
+// Fonts
+
 $Oswald: "Oswald", sans-serif;
 $Arial: "Arial", sans-serif;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+// Mixin mobile
 
 @mixin index-text {
   font-size: 14px;
@@ -79,4 +90,23 @@ $Arial: "Arial", sans-serif;
   font-weight: 400;
   font-family: "Arial", sans-serif;
   color: #444444;
+}
+
+// Mixin tablet
+
+@mixin index-text-tablet {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+}
+
+@mixin product-title-tablet {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #222222;
 }

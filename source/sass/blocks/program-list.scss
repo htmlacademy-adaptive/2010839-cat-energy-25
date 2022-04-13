@@ -1,5 +1,19 @@
 .program-list {
   list-style-type: none;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .program-list {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-list {
+    margin: 82px 0 0 0;
+  }
 }

@@ -1,0 +1,30 @@
+.range-section {
+  margin: 20px 0 0 0;
+}
+
+.range__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .range-section {
+    margin: 45px 0 0 0;
+  }
+
+  .range__wrapper {
+    width: 708px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-section {
+    margin: 71px 0 0 0;
+  }
+
+  .range__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
