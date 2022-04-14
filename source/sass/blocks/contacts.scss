@@ -1,14 +1,12 @@
 .contacts {
   display: flex;
+  justify-content: space-between;
+  background-color: $base-color;
 }
 
 .contacts__title {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: $Oswald;
+  @include product-title;
   color: $form-text-third;
-  text-transform: uppercase;
 }
 
 .contacts__text {
@@ -18,4 +16,20 @@
   font-family: $Arial;
   color: $form-text-first;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    @include product-title-tablet;
+    color: $form-text-third;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: $Arial;
+    color: $form-text-first;
+    margin: 0;
+  }
 }

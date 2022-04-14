@@ -1,8 +1,14 @@
 .program-item {
+  width: 280px;
   background-color: $second-color;
 }
 
+.program-item:not(:first-child) {
+  margin: 20px 0 0 0;
+}
+
 .program-item__title {
+  margin: 0;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -20,4 +26,38 @@
   text-decoration: none;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-item {
+    width: 708px;
+  }
+
+  .program-item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .program-item__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program-item__description {
+    @include index-text-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-item {
+    width: 570px;
+    margin: 0;
+  }
+
+  .program-item:not(:first-child) {
+    margin: 0;
+  }
+
+  .program-item:nth-child(odd) {
+    margin-right: 80px;
+  }
 }

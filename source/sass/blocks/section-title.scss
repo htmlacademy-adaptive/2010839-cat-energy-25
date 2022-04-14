@@ -1,5 +1,13 @@
 .section-title {
+  margin: 0;
   font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

@@ -1,14 +1,14 @@
 // переменные
 
-@import "./blocks/variables.scss";
+@import "./supporting/variables.scss";
 
 // шрифты
 
-@import "./blocks/font-face.scss";
+@import "./supporting/font-face.scss";
 
 // hidden
 
-@import "./blocks/visually-hidden.scss";
+@import "./supporting/visually-hidden.scss";
 
 // кнопки
 
@@ -23,17 +23,32 @@
 // header
 
 @import "./blocks/main-header.scss";
+@import "./blocks/wraper-logo.scss";
+@import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
 
 // main
 
 @import "./blocks/main-container.scss";
 @import "./blocks/cat-wraper.scss";
+
+// section
+
+@import "./blocks/program.scss";
 @import "./blocks/program-list.scss";
 @import "./blocks/program-item.scss";
 @import "./blocks/section-title.scss";
+
+// section
+
+@import "./blocks/process.scss";
 @import "./blocks/process-list.scss";
 @import "./blocks/process-item.scss";
+
+// section
+
+@import "./blocks/range-section.scss";
+@import "./blocks/example-form.scss";
 @import "./blocks/example.scss";
 @import "./blocks/example-filter-label.scss";
 @import "./blocks/range.scss";
@@ -60,6 +75,7 @@
 
 // footer
 
+@import "./blocks/main-footer.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
