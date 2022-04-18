@@ -1,5 +1,7 @@
 .extra-group {
   border: none;
+  margin: 10px 0 0 0;
+  padding: 0;
 }
 
 .extra-group__title {
@@ -13,4 +15,73 @@
 
 .extra-group__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.data-form__button {
+  padding: 7px 64px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-group__wrapper {
+    display: grid;
+    grid-template-columns: 282px 283px;
+  }
+
+  .extra-group {
+    grid-column: 1 / 3;
+  }
+
+  .data-form__button {
+    grid-column: 1 / 2;
+    padding: 13px 45px;
+  }
+
+  .data-form__required {
+    grid-column: 2 / 3;
+  }
+
+  .extra-group__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .extra-group__item {
+    width: 282px;
+  }
+
+  .extra-group__description {
+    @include data-form-text-tablet;
+    color: $color-text-second;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-group__wrapper {
+    display: grid;
+    grid-template-columns: 284px 285px 284px 284px;
+  }
+
+  .extra-group {
+    grid-column: 1 / 5;
+  }
+
+  .data-form__button {
+    grid-column: 1 / 3;
+    padding: 13px 45px;
+  }
+
+  .data-form__required {
+    grid-column: 3 / 5;
+  }
+
+  .extra-group__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .extra-group__item {
+    width: 282px;
+  }
 }

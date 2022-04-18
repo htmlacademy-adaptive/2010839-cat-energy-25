@@ -29,8 +29,8 @@
 
 // main
 
+@import "./blocks/head-block.scss";
 @import "./blocks/main-container.scss";
-@import "./blocks/cat-wraper.scss";
 
 // section
 
@@ -67,8 +67,11 @@
 
 // main  catalog
 
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-list.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/card-options.scss";
+@import "./blocks/wrapper-desktop.scss";
 @import "./blocks/catalog-option.scss";
 @import "./blocks/additional.scss";
 @import "./blocks/catalog-gift.scss";
@@ -76,6 +79,7 @@
 // footer
 
 @import "./blocks/main-footer.scss";
+@import "./blocks/contacts-index.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";

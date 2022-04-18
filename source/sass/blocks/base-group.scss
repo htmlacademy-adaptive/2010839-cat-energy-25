@@ -1,9 +1,18 @@
 .base-group {
   border: none;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
 .base-group__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.base-group__item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .base-group__label {
@@ -19,4 +28,35 @@
 .base-group__input {
   @include data-form-text;
   color: $form-text-first;
+}
+
+@media (min-width: $tablet-width) {
+  .base-group__list:nth-child(3) {
+    border: 2px solid #e7e7e7;
+  }
+
+  .base-group__label {
+    @include data-form-text-tablet;
+    color: $form-text-first;
+  }
+
+  .base-group__description {
+    @include data-form-text-tablet;
+    color: $form-text-second;
+  }
+
+  .base-group__input {
+    @include data-form-text-tablet;
+    color: $form-text-first;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .base-group {
+    display: flex;
+  }
+
+  .base-group__list:nth-child(2) {
+    margin-right: 80px;
+  }
 }

@@ -1,19 +1,48 @@
 .card-options {
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card-options__weight {
   @include catalog-card-options;
+  grid-column: 1 / 2;
 }
 
 .card-options__value {
   @include catalog-card-options;
+  margin: 0;
+  grid-column: 2 / 3;
 }
 
 .card-options__taste {
   @include catalog-card-options;
+  grid-column: 1 / 2;
 }
 
 .card-options__price {
   @include catalog-card-options;
+  grid-column: 1 / 2;
+}
+
+@media (min-width: $tablet-width) {
+  .card-options__weight {
+    @include catalog-card-options-tablet;
+    grid-column: 1 / 2;
+  }
+
+  .card-options__value {
+    @include catalog-card-options-tablet;
+    margin: 0;
+    grid-column: 2 / 3;
+  }
+
+  .card-options__taste {
+    @include catalog-card-options-tablet;
+    grid-column: 1 / 2;
+  }
+
+  .card-options__price {
+    @include catalog-card-options-tablet;
+    grid-column: 1 / 2;
+  }
 }

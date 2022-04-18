@@ -1,7 +1,18 @@
+.catalog-option__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .catalog-option__title {
   font-family: $Oswald;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $color-text-second;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-option__wrapper {
+    width: 708px;
+  }
 }
