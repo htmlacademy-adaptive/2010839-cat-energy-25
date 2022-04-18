@@ -1,4 +1,5 @@
 .button-order {
   @include product-title;
   @include button;           //  цвет достигается благодоря порядку миксинов
+  padding: 0;
 }

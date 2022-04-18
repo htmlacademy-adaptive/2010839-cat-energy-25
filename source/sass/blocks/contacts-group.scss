@@ -1,13 +1,22 @@
 .contacts-group {
   border: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.contacts-group__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contacts-group__item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts-group__title {
   @include form-group-title;
-}
-
-.contacts-group__list {
-  list-style-type: none;
 }
 
 .contacts-group__label {
@@ -24,3 +33,19 @@
   @include data-form-text;
   color: $form-text-first;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-group__label {
+    @include data-form-text-tablet;
+    color: $form-text-first;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-group__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+

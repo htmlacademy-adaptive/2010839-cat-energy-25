@@ -36,11 +36,12 @@
     </header>
 
     <main class="main-container">
-      <h1 class="main-container__title">Подбор программы</h1>
-      <b class="main-container__description">Заполните анкету, и мы подберем программу питания для вашего кота</b>
-      <form class="data-form" action="https://echo.htmlacademy.ru/" method="post" >
-        <fieldset class="base-group">
-          <legend class="visually-hidden">Базовые данные</legend>
+      <div class="main-container__wrapper">
+        <h1 class="main-container__title">Подбор программы</h1>
+        <b class="main-container__description">Заполните анкету, и мы подберем программу питания для вашего кота</b>
+        <form class="data-form" action="https://echo.htmlacademy.ru/" method="post" >
+          <fieldset class="base-group">
+            <legend class="visually-hidden">Базовые данные</legend>
           <ul class="base-group__list">
             <li class="base-group__item">
               <label for="name" class="base-group__label">ИМЯ:*</label>
@@ -78,8 +79,8 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="contacts-group">
+          </fieldset>
+          <fieldset class="contacts-group">
           <legend class="contacts-group__title">Контактные данные (владельца кота)</legend>
           <ul class="contacts-group__list">
             <li class="contacts-group__item">
@@ -91,14 +92,15 @@
               <input class="contacts-group__input" type="tel" id="contacts-phone" name="contacts-phone" value="8 (960) 900-60-90" required>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="comments-group">
+          </fieldset>
+          <fieldset class="comments-group">
           <legend class="comments-group__title" id="f">Комментарий</legend>
           <textarea class="comments-group__textarea" name="comment" cols="20" rows="5">Расскажите обо всех повадках кота</textarea>
-        </fieldset>
-        <fieldset class="extra-group">
-          <legend class="extra-group__title">Дополнительно</legend>
-          <ul class="extra-group__list">
+          </fieldset>
+          <div class="extra-group__wrapper">
+            <fieldset class="extra-group">
+            <legend class="extra-group__title">Дополнительно</legend>
+            <ul class="extra-group__list">
             <li class="extra-group__item">
               <label class="extra-group__label">
                 <input class="extra-group__input extra-group__input--checkbox" type="checkbox" name="option" checked>
@@ -127,11 +129,13 @@
                 <span class="custom-checkbox"></span> <!-- span для кастомных checkbox-->
               </label>
             </li>
-          </ul>
-        </fieldset>
-        <button class="data-form__button" type="submit">отправить заявку</button>
-        <p class="data-form__required">* — Обязательные поля</p>
-      </form>
+            </ul>
+            </fieldset>
+            <button class="data-form__button" type="submit">отправить заявку</button>
+            <p class="data-form__required">* — Обязательные поля</p>
+          </div>
+        </form>
+      </div>
     </main>
 
     <footer class="main-footer">

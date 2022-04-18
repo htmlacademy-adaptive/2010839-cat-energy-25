@@ -110,3 +110,55 @@ $desktop-width: 1440px;
   text-transform: uppercase;
   color: #222222;
 }
+
+@mixin catalog-card-options-tablet {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+@mixin additional-title-tablet {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+@mixin additional-text-tablet {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+@mixin data-form-text-tablet {
+  font-size: 20px;
+  line-height: 29.64px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+// Mixin desktop
+
+@mixin product-title-desktop {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+@mixin catalog-card-options-desktop {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}

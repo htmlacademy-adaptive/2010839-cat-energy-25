@@ -1,3 +1,12 @@
+.catalog-gift {
+  margin-top: 20px;
+}
+
+.catalog-gift__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .catalog-gift__description {
   font-size: 16px;
   line-height: 20px;
@@ -5,4 +14,19 @@
   font-family: "Arial", sans-serif;
   background-color: rgba(104, 183, 56, 0.85);
   color: $color-text-first;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-gift__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-gift__wrapper {
+    width: 245px;
+    margin: 0;
+  }
 }
