@@ -14,11 +14,13 @@
 
 .product-card__title {
   @include product-title;
+  text-align: center;
   margin: 0;
 }
 
 .product-card__description {
   @include catalog-card-options;
+  text-align: center;
 }
 
 .product-card--show-more {
@@ -76,6 +78,7 @@
 
   .product-card__button {
     padding: 10px 93px;
+    margin: 33px 37px 39px 39px;
   }
 }
 
@@ -102,6 +105,7 @@
 
   .product-card__button {
     padding: 10px 53px;
+    margin: 33px 38px 40px 39px;
   }
 
   .product-card__title {

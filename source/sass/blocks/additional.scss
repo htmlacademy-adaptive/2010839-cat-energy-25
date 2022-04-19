@@ -21,12 +21,14 @@
 
 .additional__size {
   @include additional-text;
+  text-align: left;
   margin: 0;
   grid-column: 1 / 2;
 }
 
 .additional__price {
   @include additional-text;
+  text-align: right;
   margin: 0;
   grid-column: 2 / 3;
 }
@@ -52,12 +54,14 @@
 
   .additional__size {
     @include additional-text-tablet;
+    text-align: right;
     margin: 0;
     grid-column: 2 / 3;
   }
 
   .additional__price {
     @include additional-text-tablet;
+    text-align: right;
     margin: 0;
     grid-column: 3 / 4;
   }

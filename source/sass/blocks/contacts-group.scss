@@ -32,6 +32,8 @@
 .contacts-group__input {
   @include data-form-text;
   color: $form-text-first;
+  padding: 0;
+  border: 1px solid $input-color;
 }
 
 @media (min-width: $tablet-width) {
