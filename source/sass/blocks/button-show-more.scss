@@ -7,4 +7,17 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: $form-text-first;
+  padding: 10px 94px;
+}
+
+@media (min-width: $tablet-width) {
+  .button-show-more {
+    padding: 10px 93px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-show-more {
+    padding: 10px 53px;
+  }
 }

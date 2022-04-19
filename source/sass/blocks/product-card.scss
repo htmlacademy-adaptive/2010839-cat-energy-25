@@ -1,15 +1,119 @@
 .product-card {
-  list-style-type: none;
+  width: 280px;
+}
+
+.product-card__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-card__link {
+  margin: 0;
   text-decoration: none;
 }
 
 .product-card__title {
   @include product-title;
+  text-align: center;
+  margin: 0;
 }
 
 .product-card__description {
   @include catalog-card-options;
+  text-align: center;
+}
+
+.product-card--show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card__button {
+  padding: 10px 109px;
+}
+
+//  table
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    width: 324px;
+    background-color: $second-color;
+    margin: 0 60px 81px 0;
+  }
+
+  .product-card:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .product-card:last-child {
+    background-color: $base-color;
+  }
+
+  .product-card__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card__title {
+    @include product-title-tablet;
+    margin: 0;
+  }
+
+  .product-card__description {
+    @include catalog-card-options-tablet;
+  }
+
+  .product-card--show-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card__button {
+    padding: 10px 93px;
+    margin: 33px 37px 39px 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 245px;
+    background-color: $second-color;
+    margin: 0 80px 143px 0;
+  }
+
+  .product-card:nth-child(2n) {
+    margin-right: 80px;
+  }
+
+  .product-card:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .product-card--show-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card__button {
+    padding: 10px 53px;
+    margin: 33px 38px 40px 39px;
+  }
+
+  .product-card__title {
+    @include product-title-desktop;
+    margin: 0;
+  }
+
+  .product-card__description {
+    @include catalog-card-options-desktop;
+  }
 }

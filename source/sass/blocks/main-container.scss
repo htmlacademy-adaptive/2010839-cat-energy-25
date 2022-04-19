@@ -2,21 +2,53 @@
   font-size: 60px;
   line-height: 60px;
   font-weight: 400;
+  margin: 0;
 }
 
 .main-container__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 0;
 }
 
 .main-container__description-index {
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .main-container__description {
   @include data-form-text;
+}
+
+//  form.html
+
+.main-container__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container__wrapper {
+    width: 631px;
+  }
+
+  .main-container__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  .main-container__description {
+    @include data-form-text-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container__wrapper {
+    width: 1220px;
+  }
 }

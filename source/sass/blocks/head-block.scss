@@ -1,0 +1,35 @@
+.head-block {
+  background-color: hsla(97, 53%, 47%, 0.85);
+}
+
+@media (min-width: $tablet-width) {
+  .head-block {
+    background-color: $base-color;
+  }
+}
+
+.head-block__wraper {
+  width: 280px;
+  margin: 0 auto;
+  background-image: url("../img/background-cat.jpg");
+  background-repeat: no-repeat;
+  color: $color-text-first;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .head-block__wraper {
+    width: 708px;
+    background-image: none;
+    color: $color-text-second;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .head-block__wraper {
+    width: 1220px;
+    color: $color-text-second;
+    text-align: left;
+  }
+}

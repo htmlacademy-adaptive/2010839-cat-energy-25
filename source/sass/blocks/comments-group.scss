@@ -1,5 +1,7 @@
 .comments-group {
   border: none;
+  margin: 10px 0 0 0;
+  padding: 0;
 }
 
 .comments-group__title {
@@ -9,4 +11,6 @@
 .comments-group__textarea {
   @include data-form-text;
   color: $form-text-first;
+  padding: 0;
+  border: 1px solid $input-color;
 }

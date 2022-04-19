@@ -1,13 +1,10 @@
-.card-options {
-  display: grid;
-}
-
 .card-options__weight {
   @include catalog-card-options;
 }
 
 .card-options__value {
   @include catalog-card-options;
+  margin: 0;
 }
 
 .card-options__taste {
@@ -16,4 +13,23 @@
 
 .card-options__price {
   @include catalog-card-options;
+}
+
+@media (min-width: $tablet-width) {
+  .card-options__weight {
+    @include catalog-card-options-tablet;
+  }
+
+  .card-options__value {
+    @include catalog-card-options-tablet;
+    margin: 0;
+  }
+
+  .card-options__taste {
+    @include catalog-card-options-tablet;
+  }
+
+  .card-options__price {
+    @include catalog-card-options-tablet;
+  }
 }
