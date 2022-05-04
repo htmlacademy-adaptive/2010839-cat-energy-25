@@ -1,5 +1,4 @@
 .range-section {
-  margin: 20px 0 0 0;
   background-color: $second-color;
 }
 
@@ -10,7 +9,6 @@
 
 @media (min-width: $tablet-width) {
   .range-section {
-    margin: 45px 0 0 0;
     background-color: $base-color;
   }
 
@@ -21,7 +19,6 @@
 
 @media (min-width: $desktop-width) {
   .range-section {
-    margin: 71px 0 0 0;
     background-color: $second-color;
   }
 

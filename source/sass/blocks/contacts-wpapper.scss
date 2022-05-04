@@ -1,0 +1,25 @@
+.contacts-wpapper {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-wpapper {
+    width: 708px;
+    padding: 56px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-wpapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: $base-color;
+    width: 565px;
+    padding: 56px 80px;
+  }
+}

@@ -1,10 +1,18 @@
+.card-options {
+  margin: 0;
+  grid-column: 2 /3;
+}
+
 .card-options__weight {
   @include catalog-card-options;
+  text-align: left;
+  padding: 0;
 }
 
 .card-options__value {
   @include catalog-card-options;
-  margin: 0;
+  text-align: right;
+  padding: 0;
 }
 
 .card-options__taste {
@@ -18,11 +26,12 @@
 @media (min-width: $tablet-width) {
   .card-options__weight {
     @include catalog-card-options-tablet;
+    width: 120px;
   }
 
   .card-options__value {
     @include catalog-card-options-tablet;
-    margin: 0;
+    width: 120px;
   }
 
   .card-options__taste {
@@ -31,5 +40,15 @@
 
   .card-options__price {
     @include catalog-card-options-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-options__weight {
+    width: 84px;
+  }
+
+  .card-options__value {
+    width: 84px;
   }
 }

@@ -14,6 +14,21 @@ $third-color: #eaeaea;
 $fourth-color: #000000;
 
 $input-color: #e7e7e7;
+$border-color: #d9d9d9;
+$border-color-catalog: #cdcdcd;
+$border-color-burger: #e6e6e6;
+$border-color-invalid: #ff8282;
+
+//  button
+
+$button-order-color: #5eaa2f;
+$button-shore-more-color: #ebebeb;
+
+//  icon
+
+$icon-color: #666666;
+$icon-color-hover: #68b738;
+$icon-color-active: rgba(104, 183, 56, 0.3);
 
 // Fonts
 
@@ -22,6 +37,7 @@ $Arial: "Arial", sans-serif;
 
 // Viewports
 
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 
@@ -101,7 +117,7 @@ $desktop-width: 1440px;
   line-height: 24px;
   font-weight: 400;
   font-family: "Arial", sans-serif;
-  color: #000000;
+  color: #444444;
 }
 
 @mixin product-title-tablet {

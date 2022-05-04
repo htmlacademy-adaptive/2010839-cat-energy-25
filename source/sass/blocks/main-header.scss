@@ -1,13 +1,15 @@
 .main-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0 auto;
+  padding: 10px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 708px;
+    padding: 42px 20px;
   }
 }
 

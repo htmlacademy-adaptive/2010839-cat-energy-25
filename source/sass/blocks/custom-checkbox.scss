@@ -1,0 +1,14 @@
+.custom-checkbox {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid $border-color-catalog;
+  background-color: $base-color;
+}
+
+@media (min-width: $tablet-width) {
+  .custom-checkbox {
+    width: 38px;
+    height: 38px;
+  }
+}

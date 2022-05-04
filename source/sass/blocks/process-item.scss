@@ -1,17 +1,77 @@
+.process-item {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.process-item:last-child {
+  margin-bottom: 49px;
+}
+
+.process-item__illustration {
+  width: 60px;
+  height: 60px;
+  background-color: $first-color;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process-item--health .process-item__illustration {
+  background-image: url("../img/icon_health.svg");
+}
+
+.process-item--composition .process-item__illustration {
+  background-image: url("../img/icon_composition.svg");
+}
+
+.process-item--food .process-item__illustration {
+  background-image: url("../img/icon_food.svg");
+}
+
+.process-item--time .process-item__illustration {
+  background-image: url("../img/icon_time.svg");
+}
+
 .process-item__description {
   @include index-text;
-  margin: 26px 0 0 0;
+  width: 200px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .process-item {
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 37px;
+    counter-increment: process;
+  }
+
+  .process-item::after {
+    content: counter(process);
+    position: absolute;
+    min-width: 112px;
+    font-size: 280px;
+    color: $second-color;
+    z-index: -1;
+    right: 25px;
+    top: -55px;
+  }
+
   .process-item__description {
     @include index-text-tablet;
-    margin: 32px 0 0 0;
+    width: 250px;
+    margin: 0;
+  }
+
+  .process-item__illustration {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 31px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .process-item__description {
-    margin: 32px 0 0 0;
+    margin: 0;
   }
 }
