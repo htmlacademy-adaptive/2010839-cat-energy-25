@@ -4,15 +4,33 @@
 }
 
 .catalog-option__title {
+  display: inline-block;
+  padding: 0 22px 0 758px;
+  margin: 0 0 36px -758px;
   font-family: $Oswald;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $color-text-second;
+  background-color: $base-color;
 }
+
+//  tablet
 
 @media (min-width: $tablet-width) {
   .catalog-option__wrapper {
     width: 708px;
+  }
+
+  .catalog-option__title {
+    display: inline-block;
+    padding: 0 36px;
+    margin: 0 0 80px -36px;
+    font-family: $Oswald;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: $color-text-second;
+    border-top: none;
   }
 }

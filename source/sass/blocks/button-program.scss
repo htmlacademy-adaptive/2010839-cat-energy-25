@@ -1,8 +1,29 @@
 .button-program {
   @include button;
+  display: block;
+  width: 280px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   font-family: $Oswald;
-  padding: 0;
+  padding: 7px 0;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-order-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button-program {
+    width: 244px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 14px 0;
+  }
 }

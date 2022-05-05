@@ -1,16 +1,40 @@
 .comments-group {
   border: none;
-  margin: 10px 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
 .comments-group__title {
   @include form-group-title;
+  text-transform: none;
 }
 
 .comments-group__textarea {
   @include data-form-text;
+  width: 250px;
   color: $form-text-first;
-  padding: 0;
+  padding: 9px 15px;
+  margin: 0;
   border: 1px solid $input-color;
+
+  &:hover {
+    outline: 1px solid $border-color-catalog;
+  }
+
+  &:focus {
+    outline: 2px solid $form-text-first;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comments-group__textarea {
+    width: 590px;
+    padding: 9px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments-group__textarea {
+    width: 1180px;
+  }
 }

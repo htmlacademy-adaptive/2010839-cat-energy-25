@@ -1,0 +1,17 @@
+.castom-radio {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color-catalog;
+  border-radius: 50%;
+  background-color: $base-color;
+}
+
+// tablet
+
+@media (min-width: $tablet-width) {
+  .castom-radio {
+    width: 38px;
+    height: 38px;
+  }
+}

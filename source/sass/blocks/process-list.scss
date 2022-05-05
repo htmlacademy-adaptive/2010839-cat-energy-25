@@ -10,6 +10,8 @@
   .process-list {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 115px;
+    counter-reset: process;
   }
 }
 
@@ -17,5 +19,6 @@
   .process-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    column-gap: 60px;
   }
 }

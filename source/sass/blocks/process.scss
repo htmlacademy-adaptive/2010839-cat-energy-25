@@ -9,7 +9,8 @@
 
 @media (min-width: $tablet-width) {
   .process {
-    margin: 45px 0 0 0;
+    margin: 45px 0 0 -75px;
+    border-bottom: 1px solid $border-color;
   }
 
   .process__wrapper {

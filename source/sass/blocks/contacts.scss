@@ -1,12 +1,11 @@
 .contacts {
-  display: flex;
-  justify-content: space-between;
   background-color: $second-color;
 }
 
 .contacts__title {
   @include product-title;
   color: $form-text-third;
+  width: 140px;
 }
 
 .contacts__text {
@@ -16,7 +15,10 @@
   font-family: $Arial;
   color: $form-text-first;
   margin: 0;
+  width: 140px;
 }
+
+// tablet
 
 @media (min-width: $tablet-width) {
   .contacts__title {
@@ -34,8 +36,10 @@
   }
 }
 
+// desktop
+
 @media (min-width: $desktop-width) {
   .contacts {
-    background-color: $base-color;
+    position: relative;
   }
 }

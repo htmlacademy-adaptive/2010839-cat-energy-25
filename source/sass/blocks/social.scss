@@ -2,8 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 132px;
+}
+
+.social__link {
+  fill: #666666;
+
+  &:hover {
+    fill: $icon-color-hover;
+  }
+
+  &:active {
+    fill: $icon-color-active;
+  }
 }

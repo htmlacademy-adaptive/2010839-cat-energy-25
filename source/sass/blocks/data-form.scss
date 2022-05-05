@@ -2,6 +2,15 @@
   @include button;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-order-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .data-form__required {

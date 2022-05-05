@@ -1,38 +1,83 @@
 .base-group {
   border: none;
   padding: 0;
-  margin: 10px 0 0 0;
+  margin: 0;
 }
 
 .base-group__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 22px 0 24px 0;
+}
+
+.base-group__list--radio {
+  border-bottom: 1px solid $border-color-catalog;
 }
 
 .base-group__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.base-group__item:last-child {
+  margin-bottom: 0;
 }
 
 .base-group__label {
   @include data-form-text;
   color: $form-text-first;
+  display: flex;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .base-group__description {
   @include data-form-text;
   color: $form-text-second;
+  padding: 7px 0 7px 46px;
 }
 
 .base-group__input {
   @include data-form-text;
+  cursor: pointer;
   color: $form-text-first;
-  padding: 0;
+  width: 100%;
+  padding: 14px 13px 13px 16px;
+  margin-left: 12px;
   border: 1px solid $input-color;
+
+  &:hover {
+    outline: 1px solid $border-color-catalog;
+  }
+
+  &:focus {
+    outline: 2px solid $form-text-first;
+  }
+
+  &:invalid {
+    outline: 2px solid $border-color-invalid;
+  }
 }
 
+.base-group__input[type="radio"]:checked + .castom-radio {
+  background-image: url("../img/radiobutton active.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// tablet
+
 @media (min-width: $tablet-width) {
+  .base-group__list {
+    border: none;
+  }
+
+  .base-group__list--radio {
+    padding: 25px 27px 25px 27px;
+  }
+
   .base-group__list:nth-child(3) {
     border: 2px solid #e7e7e7;
   }
@@ -45,20 +90,46 @@
   .base-group__description {
     @include data-form-text-tablet;
     color: $form-text-second;
+    padding: 5px 0 5px 60px;
   }
 
   .base-group__input {
     @include data-form-text-tablet;
     color: $form-text-first;
+    padding: 11px 18px 12px 18px;
   }
 }
+
+// desktop
 
 @media (min-width: $desktop-width) {
   .base-group {
     display: flex;
   }
 
+  .base-group__list {
+    width: 568px;
+    padding: 0;
+  }
+
   .base-group__list:nth-child(2) {
     margin-right: 80px;
+  }
+
+  .base-group__list--radio {
+    width: 512px;
+    padding: 25px 28px 25px 28px;
+  }
+
+  .base-group__item {
+    margin-bottom: 20px;
+  }
+
+  .base-group__list--radio .base-group__item {
+    margin-bottom: 13px;
+  }
+
+  .base-group__list--radio .base-group__item:last-child {
+    margin-bottom: 0;
   }
 }

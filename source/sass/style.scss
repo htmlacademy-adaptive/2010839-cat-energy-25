@@ -23,9 +23,11 @@
 // header
 
 @import "./blocks/main-header.scss";
-@import "./blocks/wraper-logo.scss";
+@import "./blocks/main-logo.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
+@import "./blocks/navigation-logo.scss";
+@import "./blocks/cat-logo.scss";
 
 // main
 
@@ -48,6 +50,7 @@
 // section
 
 @import "./blocks/range-section.scss";
+@import "./blocks/example-form.scss";
 @import "./blocks/example.scss";
 @import "./blocks/example-filter-label.scss";
 @import "./blocks/range.scss";
@@ -63,14 +66,18 @@
 @import "./blocks/contacts-group.scss";
 @import "./blocks/comments-group.scss";
 @import "./blocks/extra-group.scss";
+@import "./blocks/custom-checkbox.scss";
+@import "./blocks/castom-radio.scss";
+
 
 // main  catalog
 
-@import "./blocks/catalog.scss";
+@import "./blocks/catalog-wrapper.scss";
 @import "./blocks/catalog-list.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/card-options.scss";
-@import "./blocks/wrapper-desktop.scss";
+@import "./blocks/line-catalog.scss";
+@import "./blocks/catalog-additional-wrapper.scss";
 @import "./blocks/catalog-option.scss";
 @import "./blocks/additional.scss";
 @import "./blocks/catalog-gift.scss";
@@ -80,5 +87,6 @@
 @import "./blocks/main-footer.scss";
 @import "./blocks/contacts-index.scss";
 @import "./blocks/contacts.scss";
+@import "./blocks/contacts-wpapper.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";

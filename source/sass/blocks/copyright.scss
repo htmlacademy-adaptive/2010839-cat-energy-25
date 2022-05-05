@@ -1,11 +1,33 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px 0 19px;
+  align-items: center;
+  fill: #666666;
+
+  &:hover {
+    fill: $icon-color-hover;
+  }
+
+  &:active {
+    fill: $icon-color-active;
+  }
+
+  &:hover .copyright__title {
+    color: $icon-color-hover;
+  }
+
+  &:active .copyright__title {
+    color: $icon-color-active;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .copyright {
-    justify-content: center;
-  }
+.copyright__title {
+  font-family: "Arial", sans-serif;
+  color: $form-text-first;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0 22px 0 0;
+  text-align: center;
+  text-decoration: none;
 }

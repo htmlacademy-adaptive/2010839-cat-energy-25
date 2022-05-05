@@ -1,0 +1,15 @@
+.main-logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.main-logo__cat {
+  margin-right: 90px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-logo {
+    padding: 0;
+  }
+}
