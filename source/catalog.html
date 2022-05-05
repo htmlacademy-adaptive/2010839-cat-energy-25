@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
 
-    <header class="main-header">
+    <header class="main-header main-header--index">
       <div class="main-logo">
         <a class="main-logo__cat">
           <img class="navigation-logo" src="img/icon-logo.svg" width="33" height="37" alt="котик.">
@@ -17,7 +17,8 @@
           <img class="cat-logo" src="img/icon-cat-energy.svg" width="101" height="18" alt="Кэт энерджи.">
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <!--  main-nav--closed  main-nav--opened-->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -26,8 +27,8 @@
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="catalog.html">каталог продукции</a>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__item--active" href="catalog.html">каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">подбор программы</a>
