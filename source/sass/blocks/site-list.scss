@@ -43,7 +43,7 @@
 
   .site-list__item {
     position: relative;
-    margin-right: 30px;
+    margin-right: 32px;
     padding: 8px 0;
     border: none;
   }
@@ -72,6 +72,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+
   .site-list__link--index {
     text-decoration: none;
     color: $color-text-first;

@@ -1,3 +1,9 @@
 .cat-logo {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .cat-logo {
+    display: none;
+  }
+}

@@ -1,7 +1,12 @@
+.head-block {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
 .head-block__wraper {
+  width: 280px;
+  margin: 0 auto;
   color: $color-text-first;
   text-align: center;
-  background-color: rgba(104, 183, 56, 0.85);
 }
 
 .head-block__container {
@@ -11,8 +16,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .head-block__wraper {
+  .head-block {
     background-color: $base-color;
+  }
+
+  .head-block__wraper {
     width: 708px;
     background-image: none;
     color: $color-text-second;
@@ -27,6 +35,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .head-block {
+    background-color: $base-color;
+    width: 50%;
+  }
+
   .head-block__wraper {
     margin: 0;
   }

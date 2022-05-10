@@ -1,7 +1,3 @@
-.contacts {
-  background-color: $second-color;
-}
-
 .contacts__title {
   @include product-title;
   color: $form-text-third;
@@ -39,7 +35,9 @@
 // desktop
 
 @media (min-width: $desktop-width) {
-  .contacts {
+  .contacts__container {
     position: relative;
+    width: 1220px;
+    margin: 0 auto;
   }
 }

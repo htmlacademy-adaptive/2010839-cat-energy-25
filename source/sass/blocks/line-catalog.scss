@@ -1,5 +1,5 @@
 .line-catalog {
-  margin-top: 20px;
+  margin-top: 25px;
   position: relative;
 }
 
@@ -14,12 +14,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .line-catalog {
+    margin-top: -73px;
+  }
+
   .line-catalog::before {
     top: 2%;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .line-catalog {
+    margin-top: -68px;
+  }
+
   .line-catalog::before {
     top: 5%;
   }

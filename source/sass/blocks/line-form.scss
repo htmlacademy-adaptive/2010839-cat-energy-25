@@ -1,0 +1,13 @@
+.line-form {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: -1;
+  }
+}

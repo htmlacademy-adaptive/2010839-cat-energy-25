@@ -1,0 +1,57 @@
+.button-block {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-block__button {
+  @include button;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 7px 64px;
+  width: 280px;
+
+  &:hover {
+    background-color: $button-order-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button-block__required {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $Arial;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .button-block {
+    width: 630px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .button-block__button {
+    padding: 13px 45px;
+    margin-right: 61px;
+    width: 282px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-block {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .button-block__button {
+    margin-right: 81px;
+    width: 568px;
+  }
+}
