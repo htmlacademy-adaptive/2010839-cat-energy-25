@@ -24,6 +24,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .card-options__information {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $border-color-catalog;
+    padding: 7px 0 9px 0;
+  }
+
   .card-options__weight {
     @include catalog-card-options-tablet;
     width: 120px;
