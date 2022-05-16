@@ -1,0 +1,22 @@
+.line-form {
+  position: relative;
+  padding-top: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 41px;
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .line-form {
+    &::before {
+      top: 46px;
+    }
+  }
+}

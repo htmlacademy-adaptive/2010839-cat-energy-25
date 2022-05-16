@@ -6,6 +6,18 @@
   background-color: $base-color;
 }
 
+.extra-group__input:disabled + .custom-checkbox {
+  border: 1px solid $color-disabled;
+}
+
+.extra-group__input:hover + .custom-checkbox {
+  border: 1px solid $radio-hover;
+}
+
+.extra-group__input:focus + .custom-checkbox {
+  border: 1px solid $form-text-first;
+}
+
 @media (min-width: $tablet-width) {
   .custom-checkbox {
     width: 38px;

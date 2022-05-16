@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid $border-color-catalog;
-  padding: 13px 0 19px 0;
+  padding: 12px 0 19px 0;
 }
 
 .additional__item:last-child {
@@ -55,7 +55,7 @@
     justify-content: center;
     width: 708px;
     display: grid;
-    grid-template-columns: 212px 210px 210px;
+    grid-template-columns: 212px 329px 91px;
     border-top: none;
     border-bottom: 1px solid $border-color-catalog;
     padding: 26px 0 28px 0;
@@ -90,7 +90,7 @@
 
   .additional__button {
     grid-column: 1 / 4;
-    padding: 7px 0;
+    padding: 10px 0;
   }
 }
 
@@ -104,11 +104,11 @@
   .additional__item {
     width: 896px;
     display: grid;
-    grid-template-columns: 200px 1fr 1fr 244px;
+    grid-template-columns: 289px 1fr 44px 244px;
     column-gap: 38px;
     border-bottom: none;
     border-top: 1px solid $border-color-catalog;
-    padding: 15px 0 17px 0;
+    padding: 14px 0 17px 0;
   }
 
   .additional__item:last-child {
@@ -124,11 +124,13 @@
   .additional__size {
     grid-column: 2 / 3;
     padding: 13px 0 7px 0;
+    text-align: left;
   }
 
   .additional__price {
     grid-column: 3 / 4;
     padding: 13px 0 7px 0;
+    text-align: left;
   }
 
   .additional__button {

@@ -1,17 +1,24 @@
 .comments-group {
+  position: relative;
   border: none;
-  margin: 0;
   padding: 0;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .comments-group__title {
   @include form-group-title;
   text-transform: none;
+  display: inline-block;
+  padding: 0 22px 0 758px;
+  margin: 0 0 36px -758px;
+  background-color: #ffffff;
 }
 
 .comments-group__textarea {
   @include data-form-text;
   width: 250px;
+  height: 130px;
   color: $form-text-first;
   padding: 9px 15px;
   margin: 0;
@@ -26,15 +33,37 @@
   }
 }
 
+// tablet
+
 @media (min-width: $tablet-width) {
+  .comments-group {
+    width: 630px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  .comments-group__title {
+    @include form-group-title-tablet;
+    padding: 0 36px;
+    margin: 0 0 77px -36px;
+  }
+
   .comments-group__textarea {
+    font-size: 20px;
+    line-height: 30px;
     width: 590px;
+    height: 154px;
     padding: 9px 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .comments-group {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .comments-group__textarea {
-    width: 1180px;
+    width: 1160px;
   }
 }

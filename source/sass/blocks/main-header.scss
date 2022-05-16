@@ -5,15 +5,15 @@
 @media (min-width: $tablet-width) {
   .main-header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 708px;
-    padding: 42px 20px;
+    padding: 25px 0 64px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
     width: 1220px;
+    padding: 52px 0 77px 0;
   }
 }

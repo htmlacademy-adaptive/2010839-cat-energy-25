@@ -1,10 +1,44 @@
 .castom-radio {
-  position: absolute;
-  width: 30px;
-  height: 30px;
+  position: relative;
+  width: 28px;
+  height: 28px;
   border: 1px solid $border-color-catalog;
   border-radius: 50%;
   background-color: $base-color;
+}
+
+.base-group__input[type="radio"]:checked + .castom-radio::before {
+  content: "";
+  position: absolute;
+  top: 8.25px;
+  left: 8.25px;
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 50%;
+  background-color: $first-color;
+}
+
+.base-group__input[type="radio"]:disabled + .castom-radio::before {
+  content: "";
+  position: absolute;
+  top: 8.25px;
+  left: 8.25px;
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 50%;
+  background-color: $radio-disabled-inside;
+}
+
+.base-group__input:disabled + .castom-radio {
+  border: 1px solid $color-disabled;
+}
+
+.base-group__input:hover + .castom-radio {
+  border: 1px solid $radio-hover;
+}
+
+.base-group__input:focus + .castom-radio {
+  border: 1px solid $form-text-first;
 }
 
 // tablet
@@ -13,5 +47,27 @@
   .castom-radio {
     width: 38px;
     height: 38px;
+  }
+
+  .base-group__input[type="radio"]:checked + .castom-radio::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $first-color;
+  }
+
+  .base-group__input[type="radio"]:disabled + .castom-radio::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $radio-disabled-inside;
   }
 }

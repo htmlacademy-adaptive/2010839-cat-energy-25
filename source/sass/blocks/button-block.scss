@@ -1,0 +1,72 @@
+.button-block {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.button-block__button {
+  @include button;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 10px 64px;
+  width: 280px;
+
+  &:hover {
+    background-color: $button-order-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button-block__required {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $Arial;
+  font-weight: 400;
+  margin: 20px 0 33px 0;
+}
+
+// tablet
+
+@media (min-width: $tablet-width) {
+  .button-block {
+    width: 630px;
+    margin: 0 auto;
+    flex-direction: row;
+    padding-top: 12px;
+    padding-bottom: 63px;
+  }
+
+  .button-block__button {
+    font-size: 20px;
+    line-height: 1;
+    padding: 17px 45px;
+    margin-right: 62px;
+    width: 282px;
+  }
+
+  .button-block__required {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 24px 0 29px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-block {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
+
+  .button-block__button {
+    margin-right: 81px;
+    width: 568px;
+  }
+}
