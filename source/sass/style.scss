@@ -50,25 +50,19 @@
 // section
 
 @import "./blocks/range-section.scss";
-@import "./blocks/example-form.scss";
 @import "./blocks/example.scss";
-@import "./blocks/example-filter-label.scss";
 @import "./blocks/range.scss";
-@import "./blocks/range-scale.scss";
-@import "./blocks/range-bar.scss";
-@import "./blocks/range-toggle.scss";
-@import "./blocks/toggle-current.scss";
 
 // main form
 
-@import "./blocks/data-form.scss";
+@import "./blocks/button-block.scss";
 @import "./blocks/base-group.scss";
 @import "./blocks/contacts-group.scss";
 @import "./blocks/comments-group.scss";
 @import "./blocks/extra-group.scss";
 @import "./blocks/custom-checkbox.scss";
 @import "./blocks/castom-radio.scss";
-
+@import "./blocks/line-form.scss";
 
 // main  catalog
 
@@ -85,7 +79,6 @@
 // footer
 
 @import "./blocks/main-footer.scss";
-@import "./blocks/contacts-index.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/contacts-wpapper.scss";
 @import "./blocks/social.scss";

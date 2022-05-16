@@ -43,8 +43,8 @@
 
   .site-list__item {
     position: relative;
-    margin-right: 30px;
-    padding: 8px 0;
+    margin-right: 32px;
+    padding: 17px 0 8px 0;
     border: none;
   }
 
@@ -72,6 +72,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+
   .site-list__link--index {
     text-decoration: none;
     color: $color-text-first;
@@ -86,6 +91,10 @@
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
+  }
+
+  .site-list__item {
+    margin-right: 36px;
   }
 
   .site-list__item--index-active::before {

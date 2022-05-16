@@ -11,7 +11,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 115px;
+    row-gap: 77px;
     counter-reset: process;
+    padding-top: 9px;
+    padding-bottom: 46px;
   }
 }
 
@@ -19,6 +22,7 @@
   .process-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 60px;
+    column-gap: 75px;
+    padding-top: 22px;
   }
 }

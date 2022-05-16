@@ -6,9 +6,10 @@
   line-height: 18px;
   font-weight: 400;
   font-family: $Oswald;
-  padding: 7px 0;
+  padding: 14px 0;
   text-align: center;
   cursor: pointer;
+  z-index: 2;
 
   &:hover {
     background-color: $button-order-color;
@@ -21,9 +22,16 @@
 
 @media (min-width: $tablet-width) {
   .button-program {
+    position: absolute;
     width: 244px;
     font-size: 20px;
     line-height: 1;
-    padding: 14px 0;
+    padding: 16px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-program {
+    // top: 327px;
   }
 }

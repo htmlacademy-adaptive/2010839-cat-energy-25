@@ -1,7 +1,3 @@
-.contacts {
-  background-color: $second-color;
-}
-
 .contacts__title {
   @include product-title;
   color: $form-text-third;
@@ -24,6 +20,8 @@
   .contacts__title {
     @include product-title-tablet;
     color: $form-text-third;
+    min-width: 159px;
+    padding-left: 40px;
   }
 
   .contacts__text {
@@ -33,13 +31,26 @@
     font-family: $Arial;
     color: $form-text-first;
     margin: 0;
+    min-width: 159px;
+    text-align: right;
+    padding-right: 40px;
   }
 }
 
 // desktop
 
 @media (min-width: $desktop-width) {
-  .contacts {
+  .contacts__container {
     position: relative;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    padding-left: 0;
+  }
+
+  .contacts__text {
+    padding-right: 0;
   }
 }
