@@ -7,6 +7,14 @@
   margin: 0 auto;
 }
 
+.main-footer__contacts {
+  background-color: $second-color;
+}
+
+.main-footer__contacts-index {
+  background-color: $base-color;
+}
+
 .main-footer__map iframe {
   border: none;
 }
@@ -49,11 +57,12 @@
     display: flex;
     justify-content: space-between;
     width: 708px;
-    padding: 58px 0 55px 0;
+    padding: 50px 0 55px 0;
   }
 
   .main-footer__company {
     padding: 0;
+    align-items: end;
   }
 
   .main-footer__social {
@@ -70,6 +79,6 @@
 @media (min-width: $desktop-width) {
   .main-footer__container {
     width: 1220px;
-    padding: 57px 0 58px 0;
+    padding: 51px 0 58px 0;
   }
 }

@@ -1,5 +1,5 @@
 .process {
-  margin: 20px 0 0 0;
+  margin: 26px 0 0 0;
 }
 
 .process__wrapper {
@@ -9,8 +9,7 @@
 
 @media (min-width: $tablet-width) {
   .process {
-    margin: 45px 0 0 -75px;
-    border-bottom: 1px solid $border-color;
+    margin: 50px 0 0 -75px;
   }
 
   .process__wrapper {
@@ -21,6 +20,7 @@
 @media (min-width: $desktop-width) {
   .process {
     margin: 71px 0 0 0;
+    border: none;
   }
 
   .process__wrapper {

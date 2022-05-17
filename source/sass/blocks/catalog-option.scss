@@ -25,12 +25,21 @@
   .catalog-option__title {
     display: inline-block;
     padding: 0 36px;
-    margin: 0 0 80px -36px;
+    margin: 0 0 80px 0;
     font-family: $Oswald;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
     color: $color-text-second;
     border-top: none;
+  }
+}
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .catalog-option__title {
+    padding: 0 36px;
+    margin: 0 0 80px -36px;
   }
 }

@@ -1,7 +1,9 @@
 .contacts-group {
+  position: relative;
   border: none;
-  margin: 0;
   padding: 0;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .contacts-group__list {
@@ -14,17 +16,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-group__title {
   @include form-group-title;
   text-transform: none;
+  max-width: 187px;
+  display: inline-block;
+  padding: 0 14px 0 758px;
+  margin: 0 0 33px -758px;
+  background-color: #ffffff;
 }
 
 .contacts-group__label {
   @include data-form-text;
   color: $form-text-first;
+  white-space: nowrap;
 }
 
 .contacts-group__description {
@@ -36,8 +48,8 @@
   @include data-form-text;
   color: $form-text-first;
   width: 100%;
-  padding: 14px 5px 15px 15px;
-  margin-left: 8px;
+  padding: 11px 5px 10px 15px;
+  margin-left: 11px;
   border: 1px solid $input-color;
 
   &:hover {
@@ -68,27 +80,62 @@
 // tablet
 
 @media (min-width: $tablet-width) {
+  .contacts-group {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  .contacts-group__wrapper {
+    padding-bottom: 40px;
+  }
+
+  .contacts-group__title {
+    @include form-group-title-tablet;
+    max-width: 514px;
+    padding: 0 36px;
+    margin: 0 0 73px -36px;
+  }
+
   .contacts-group__label {
     @include data-form-text-tablet;
     color: $form-text-first;
   }
 
+  .contacts-group__input {
+    @include data-form-text-tablet;
+    padding: 11px 5px 10px 18px;
+  }
+
   .contacts-group__input--email {
     background-position: right 19px center;
+    margin-left: 22px;
   }
 
   .contacts-group__input--phone {
     background-position: right 17px center;
+    margin-left: 16px;
   }
 
   .contacts-group__item {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
 // desktop
 
 @media (min-width: $desktop-width) {
+  .contacts-group {
+    width: 1220px;
+    margin: 0 auto;
+    // &::before {
+    //   top: 7%;
+    // }
+  }
+
+  .contacts-group__wrapper {
+
+  }
+
   .contacts-group__list {
     display: flex;
   }
@@ -96,5 +143,13 @@
   .contacts-group__item {
     width: 568px;
     margin: 0 80px 0 0;
+
+    &:nth-of-type(2) {
+      margin: 0;
+    }
+  }
+
+  .contacts-group__input {
+    margin-left: 20px;
   }
 }
