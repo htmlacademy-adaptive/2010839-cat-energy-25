@@ -10,7 +10,7 @@
   text-transform: none;
   display: inline-block;
   padding: 0 22px 0 758px;
-  margin: 0 0 31px -758px;
+  margin: 0 0 32px -758px;
   background-color: #ffffff;
 }
 
@@ -27,6 +27,14 @@
   background-image: url("../img/checkbox-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.extra-group__input:disabled ~ .extra-group__description {
+  opacity: 30%;
+}
+
+.extra-group__input[type="checkbox"]:disabled + .custom-checkbox {
+  opacity: 30%;
 }
 
 .extra-group__description {

@@ -4,11 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 23px;
 }
 
 .button-block__button {
   @include button;
+  font-family: $Oswald;
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
@@ -46,7 +47,7 @@
   .button-block__button {
     font-size: 20px;
     line-height: 1;
-    padding: 17px 45px;
+    padding: 16px 45px;
     margin-right: 62px;
     width: 282px;
   }
