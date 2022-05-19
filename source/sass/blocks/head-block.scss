@@ -1,10 +1,10 @@
 .head-block {
-  background-image: url("../img/index-background-phone.jpg");
+  background-image: url("../img/index/index-background-phone.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background-phone@2x.jpg");
+    background-image: url("../img/index/index-background-phone@2x.jpg");
   }
 }
 
@@ -94,20 +94,31 @@
 
   .head-block::after {
     content: "";
+    z-index: -2;
+    position: absolute;
+    width: 50%;
+    height: 694px;
+    top: 0;
+    right: 0;
+    background-image: url("../img/index/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/index-background-desktop@2x.jpg");
+    }
+  }
+
+  .head-block::before {
+    content: "";
+    z-index: -1;
     background-color: rgba(104, 183, 56, 0.85);
     position: absolute;
     width: 50%;
     height: 694px;
     top: 0;
     right: 0;
-    z-index: -1;
-    background-image: url("../img/index-background-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: 1043px 694px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
-    }
   }
 
   .head-block__wraper::before {

@@ -38,6 +38,13 @@
   cursor: pointer;
 }
 
+.range__toggle--min,
+.range__toggle--max {
+  &:hover {
+    background-color: $third-color;
+  }
+}
+
 .range__toggle--current {
   position: absolute;
   width: 35px;
@@ -66,14 +73,17 @@
 
   .range__toggle {
     @include data-form-text-tablet;
-  }
-
-  .range__scale {
     position: relative;
   }
 
-  .range__bar {
-    padding: 35px 0 0 0;
+  .range__toggle--min,
+  .range__toggle--max {
+    padding-bottom: 6px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      border-bottom: 1px rgba(0, 0, 0, 0.4);
+    }
   }
 
   .range__toggle--current {
@@ -85,7 +95,16 @@
     left: 208px;
     top: -15px;
     border: 1px solid $border-color-catalog;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background-color: $base-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      border: 1px solid $first-color;
+    }
 
     &::before {
       content: "";
@@ -97,10 +116,14 @@
       border-radius: 50%;
       background-color: $first-color;
     }
+  }
 
-    &:hover {
-      border: 1px solid $first-color;
-    }
+  .range__scale {
+    position: relative;
+  }
+
+  .range__bar {
+    padding: 35px 0 0 0;
   }
 }
 
@@ -110,8 +133,8 @@
   .range {
     padding: 0;
     position: absolute;
-    top: -20px;
-    right: 110px;
+    top: -41px;
+    right: 0;
   }
 
   .range__toggle {
@@ -126,6 +149,10 @@
   .range__toggle--min,
   .range__toggle--max {
     background-color: $second-color;
+
+    &:hover {
+      background-color: #f2f2f2;;
+    }
   }
 
   .range__bar {

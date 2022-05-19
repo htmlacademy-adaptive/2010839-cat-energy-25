@@ -23,6 +23,7 @@
   padding: 9px 15px;
   margin: 0;
   border: 1px solid $input-color;
+  resize: none;
 
   &:hover {
     outline: 1px solid $border-color-catalog;
@@ -44,8 +45,8 @@
 
   .comments-group__title {
     @include form-group-title-tablet;
-    padding: 0 36px;
-    margin: 0 0 77px -36px;
+    padding: 0px 42px;
+    margin: 0 0 77px -42px;
   }
 
   .comments-group__textarea {
@@ -53,7 +54,7 @@
     line-height: 30px;
     width: 590px;
     height: 154px;
-    padding: 9px 20px;
+    padding: 9px 19px;
   }
 }
 

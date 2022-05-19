@@ -50,6 +50,16 @@
   padding: 22px 0;
 }
 
+.main-footer__logo {
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
 // tablet
 
 @media (min-width: $tablet-width) {

@@ -10,8 +10,8 @@
 .base-group__input[type="radio"]:checked + .castom-radio::before {
   content: "";
   position: absolute;
-  top: 8.25px;
-  left: 8.25px;
+  top: 7.25px;
+  left: 7.25px;
   width: 13.5px;
   height: 13.5px;
   border-radius: 50%;
@@ -21,8 +21,8 @@
 .base-group__input[type="radio"]:disabled + .castom-radio::before {
   content: "";
   position: absolute;
-  top: 8.25px;
-  left: 8.25px;
+  top: 7.25px;
+  left: 7.25px;
   width: 13.5px;
   height: 13.5px;
   border-radius: 50%;
@@ -30,7 +30,7 @@
 }
 
 .base-group__input:disabled + .castom-radio {
-  border: 1px solid $color-disabled;
+  opacity: 30%;
 }
 
 .base-group__input:hover + .castom-radio {

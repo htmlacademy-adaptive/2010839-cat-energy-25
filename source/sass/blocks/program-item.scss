@@ -56,13 +56,37 @@
 }
 
 .program-item__button {
-  color: $color-text-second;
   text-decoration: none;
+  padding-top: 17px;
+  display: flex;
+  align-items: center;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.program-item__subtitle {
+  display: block;
+  color: $color-text-second;
   font-size: 16px;
   line-height: 16px;
   align-self: flex-start;
-  padding-top: 17px;
+  margin: 0;
   text-transform: uppercase;
+  padding-right: 17px;
+}
+
+.program-item__polygon--big {
+  display: none;
+}
+
+.program-item__button:hover .program-item__polygon {
+  display: none;
+}
+
+.program-item__button:hover .program-item__polygon--big {
+  display: block;
 }
 
 // tablet
@@ -118,9 +142,13 @@
   }
 
   .program-item__button {
+    padding-top: 0;
+  }
+
+  .program-item__subtitle {
     font-size: 20px;
     line-height: 29.64px;
-    padding-top: 0;
+    padding-right: 25px;
   }
 }
 
@@ -168,5 +196,9 @@
   .program-item__description {
     width: 467px;
     padding-bottom: 27px;
+  }
+
+  .program-item__subtitle {
+    padding-right: 28px;
   }
 }
