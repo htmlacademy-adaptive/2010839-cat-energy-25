@@ -14,9 +14,36 @@
     background-color: $first-color;
   }
 
-  &__illustration {
-    position: absolute;
-    padding: 15px 14px;
+  &--health {
+    &::before {
+      background-image: url("../img/index/health.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--composition {
+    &::before {
+      background-image: url("../img/index/composition.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--food {
+    &::before {
+      background-image: url("../img/index/food.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../img/index/time.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   &__description {
