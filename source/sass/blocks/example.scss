@@ -34,7 +34,9 @@
 }
 
 .example__amount {
-  @include product-title-desktop;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
   color: $color-text-second;
   text-align: center;
   margin: 0;

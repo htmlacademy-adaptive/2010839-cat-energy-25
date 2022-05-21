@@ -67,14 +67,18 @@
   }
 }
 
+.contacts-group__input + .contacts-group__svg--email {
+  fill: $base-color;
+  stroke: $form-text-second;
+  stroke-width: 1.3;
+}
+
 .contacts-group__input:focus + .contacts-group__svg {
   stroke: $icon-color-hover;
-  fill: $icon-color-hover;
 }
 
 .contacts-group__input:invalid + .contacts-group__svg {
   stroke: $icon-color-invalid;
-  fill: $icon-color-invalid;
 }
 
 .contacts-group__svg {
