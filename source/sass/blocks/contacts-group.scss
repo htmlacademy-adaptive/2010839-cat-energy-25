@@ -45,14 +45,29 @@
   color: $form-text-second;
 }
 
+.contacts-group__svg {
+  position: absolute;
+  right: 15px;
+  bottom: center;
+}
+
+.contacts-group__svg--email {
+  stroke: $fourth-color;
+  fill: $base-color;
+}
+
+.contacts-group__svg--phone {
+  fill: $base-color;
+}
+
 .contacts-group__input {
   @include data-form-text;
   color: $form-text-first;
   width: 100%;
   padding: 11px 5px 10px 15px;
   margin-left: 11px;
-  border: 1px solid $input-color;
-
+  outline: 1px solid $input-color;
+  border: none;
 
   &:hover {
     outline: 1px solid $border-color-catalog;
@@ -62,29 +77,21 @@
     outline: 2px solid $form-text-first;
   }
 
-  &:invalid {
+  &:invalid:active {
     outline: 2px solid $border-color-invalid;
   }
 }
 
-.contacts-group__input + .contacts-group__svg--email {
-  fill: $base-color;
-  stroke: $form-text-second;
-  stroke-width: 1.3;
-}
-
-.contacts-group__input:focus + .contacts-group__svg {
+.contacts-group__input--email:focus + .contacts-group__svg {
   stroke: $icon-color-hover;
 }
 
-.contacts-group__input:invalid + .contacts-group__svg {
-  stroke: $icon-color-invalid;
+.contacts-group__input--phone:focus + .contacts-group__svg {
+  fill: $icon-color-hover;
 }
 
-.contacts-group__svg {
-  position: absolute;
-  right: 15px;
-  bottom: center;
+.contacts-group__input:invalid:active + .contacts-group__svg {
+  stroke: $icon-color-invalid;
 }
 
 // tablet
