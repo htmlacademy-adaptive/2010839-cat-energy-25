@@ -8,6 +8,9 @@
     <link rel="icon" href="favicon.ico">   <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="preload" href="/css/style.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header main-header--index">
@@ -29,7 +32,7 @@
             <img class="main-logo__cat-energy" src="img/logo/icon-cat-energy.svg" alt="Логотип">
           </picture>
         </a>
-        <button class="main-logo__toggle main-logo__toggle--opened main-logo__toggle--nojs" type="button">
+        <button class="visually-hidden main-logo__toggle main-logo__toggle--opened main-logo__toggle--nojs" type="button">
               <!--  main-logo__toggle--closed  main-logo__toggle--opened-->
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -86,21 +89,21 @@
                   <li class="base-group__item base-group__item--radio">
                     <label class="base-group__label">
                       <input class="visually-hidden base-group__input base-group__input--radio" type="radio" name="option" value="thin" checked>
-                      <span class="castom-radio"></span>
+                      <span class="custom-radio"></span>
                       <span class="base-group__description" >похудение</span>
                     </label>
                   </li>
                   <li class="base-group__item base-group__item--radio">
                     <label class="base-group__label">
                       <input class="visually-hidden base-group__input base-group__input--radio" type="radio" name="option" value="fat">
-                      <span class="castom-radio"></span>
+                      <span class="custom-radio"></span>
                       <span class="base-group__description" >Набор массы</span>
                     </label>
                   </li>
                   <li class="base-group__item base-group__item--radio">
                     <label class="base-group__label">
                       <input class="visually-hidden base-group__input base-group__input--radio" type="radio" name="option" value="unknown">
-                      <span class="castom-radio"></span>
+                      <span class="custom-radio"></span>
                       <span class="base-group__description" >Не знаю (Нужен ваш совет)</span>
                     </label>
                   </li>
@@ -183,7 +186,7 @@
     <footer class="main-footer">
       <section class="main-footer__contacts contacts">
         <div class="contacts__container">
-          <div class="contacts-wpapper">
+          <div class="contacts-wrapper">
             <h2 class="visually-hidden">Контакты</h2>
             <b class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</b>
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

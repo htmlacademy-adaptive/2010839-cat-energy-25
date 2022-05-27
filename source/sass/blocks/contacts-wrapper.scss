@@ -1,4 +1,4 @@
-.contacts-wpapper {
+.contacts-wrapper {
   display: flex;
   justify-content: space-between;
   width: 280px;
@@ -7,14 +7,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts-wpapper {
+  .contacts-wrapper {
     width: 708px;
     padding: 61px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contacts-wpapper {
+  .contacts-wrapper {
     position: absolute;
     top: 95px;
     left: 0;
