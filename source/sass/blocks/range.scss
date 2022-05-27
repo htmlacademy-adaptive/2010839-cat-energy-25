@@ -15,6 +15,7 @@
   transform: translate(0, 0);
   top: 1px;
   width: 100%;
+  display: none;
 }
 
 .range__bar {
@@ -100,6 +101,7 @@
     transform: translate(0, 0);
     top: 1px;
     width: 50%;
+    display: block;
   }
 
   .range__box {

@@ -1,0 +1,25 @@
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-wrapper {
+    width: 708px;
+    padding: 61px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-wrapper {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    background-color: $base-color;
+    width: 393px;
+    padding: 56px 80px;
+  }
+}

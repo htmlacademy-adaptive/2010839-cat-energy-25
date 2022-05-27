@@ -1,13 +1,16 @@
-.custom-checkbox {
-  position: absolute;
+.custom-radio {
+  position: relative;
   width: 28px;
   height: 28px;
   border: 1px solid $border-color-catalog;
+  border-radius: 50%;
   background-color: $base-color;
 }
 
+// tablet
+
 @media (min-width: $tablet-width) {
-  .custom-checkbox {
+  .custom-radio {
     width: 38px;
     height: 38px;
   }

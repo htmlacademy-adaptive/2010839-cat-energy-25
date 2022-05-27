@@ -1,0 +1,35 @@
+.contacts-index {
+  display: flex;
+  justify-content: space-between;
+  background-color: $base-color;
+}
+
+.contacts-index__title {
+  @include product-title;
+  color: $form-text-third;
+}
+
+.contacts-index__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $Arial;
+  color: $form-text-first;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-index__title {
+    @include product-title-tablet;
+    color: $form-text-third;
+  }
+
+  .contacts-index__text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: $Arial;
+    color: $form-text-first;
+    margin: 0;
+  }
+}

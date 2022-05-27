@@ -45,13 +45,13 @@
       background-repeat: no-repeat;
     }
   }
+}
 
-  &__description {
-    @include index-text;
-    width: 200px;
-    margin: 0;
-    padding-left: 20px;
-  }
+.process-item__description {
+  @include index-text;
+  width: 200px;
+  margin: 0;
+  padding-left: 20px;
 }
 
 // tablet
@@ -89,11 +89,11 @@
       right: 5px;
       top: -103px;
     }
+  }
 
-    &__illustration {
-      position: absolute;
-      padding: 25px 24px;
-    }
+  .process-item__illustration {
+    position: absolute;
+    padding: 25px 24px;
   }
 
   .process-item__description {
