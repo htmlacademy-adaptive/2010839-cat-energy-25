@@ -8,7 +8,7 @@
   }
 }
 
-.head-block__wraper {
+.head-block__wrapper {
   color: $color-text-first;
   text-align: center;
   background-color: rgba(104, 183, 56, 0.85);
@@ -44,7 +44,7 @@
     background-image: none;
   }
 
-  .head-block__wraper {
+  .head-block__wrapper {
     background-color: $base-color;
     width: 708px;
     background-image: none;
@@ -77,7 +77,7 @@
     margin: 0 auto;
   }
 
-  .head-block__wraper {
+  .head-block__wrapper {
     margin: 0;
     width: 414px;
   }
@@ -121,7 +121,7 @@
     right: 0;
   }
 
-  .head-block__wraper::before {
+  .head-block__wrapper::before {
     content: "";
     position: absolute;
     width: 50%;

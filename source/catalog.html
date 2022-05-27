@@ -8,6 +8,9 @@
     <link rel="icon" href="favicon.ico">   <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="preload" href="/css/style.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header main-header--index">
@@ -29,8 +32,9 @@
             <img class="main-logo__cat-energy" src="img/logo/icon-cat-energy.svg" alt="Логотип">
           </picture>
         </a>
-        <button class="main-logo__toggle main-logo__toggle--opened main-logo__toggle--nojs" type="button">
-              <!--  main-logo__toggle--closed  main-logo__toggle--opened-->
+        <button class="visually-hidden main-logo__toggle main-logo__toggle--opened main-logo__toggle--nojs" type="button">
+              <!-- main-logo__toggle--closed  main-logo__toggle--opened-->
+              <!-- кнопка скрыта через visually-hidden -->
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -55,13 +59,17 @@
         <h1 class="main-container__title-catalog">Каталог продукции</h1>
         <section class="catalog">
           <ul class="catalog-list">
-            <li class="product-card product-card--smal">
+            <li class="product-card product-card--small">
               <div class="product-card__wrapper">
-                <a href="Cat-Energy-PRO-500-hen.html" class="product-card__illustration product-card__illustration--smal">
+                <a href="Cat-Energy-PRO-500-hen.html" class="product-card__illustration product-card__illustration--small">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/hen-desktop-smal.png 1x, img/catalog/hen-desktop-smal@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/catalog/hen-tablet-smal.png 1x, img/catalog/hen-tablet-smal@2x.png 2x">
-                    <img class="" src="img/catalog/hen-phone-smal.png" srcset="img/catalog/hen-phone-smal@2x.png 2x" alt="Пример нашей работы.">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/hen-desktop-small.webp 1x, img/catalog/hen-desktop-small@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/hen-tablet-small.webp 1x, img/catalog/hen-tablet-small@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/hen-phone-small.webp 1x, img/catalog/hen-phone-small@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" srcset="img/catalog/hen-desktop-small.png 1x, img/catalog/hen-desktop-small@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/hen-tablet-small.png 1x, img/catalog/hen-tablet-small@2x.png 2x">
+                    <img class="" src="img/catalog/hen-phone-small.png" srcset="img/catalog/hen-phone-small@2x.png 2x" alt="Пример нашей работы.">
                   </picture>
                 </a>
                     <a href="Cat-Energy-PRO-500-hen.html" class="product-card__link">
@@ -88,6 +96,10 @@
               <div class="product-card__wrapper">
                 <a href="Cat-Energy-PRO-1000-hen.html" class="product-card__illustration product-card__illustration--big">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/hen-desktop-big.webp 1x, img/catalog/hen-desktop-big@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/hen-tablet-big.webp 1x, img/catalog/hen-tablet-big@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/hen-phone-big.webp 1x, img/catalog/hen-phone-big@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="img/catalog/hen-desktop-big.png 1x, img/catalog/hen-desktop-big@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/hen-tablet-big.png 1x, img/catalog/hen-tablet-big@2x.png 2x">
                     <img class="" src="img/catalog/hen-phone-big.png" srcset="img/catalog/hen-phone-big@2x.png 2x" alt="Пример нашей работы.">
@@ -113,13 +125,17 @@
               </div>
                   <button class="product-card__button button-order">заказать</button>
             </li>
-            <li class="product-card product-card--smal">
+            <li class="product-card product-card--small">
               <div class="product-card__wrapper">
-                <a href="Cat-Energy-PRO-500-fish.html" class="product-card__illustration product-card__illustration--smal">
+                <a href="Cat-Energy-PRO-500-fish.html" class="product-card__illustration product-card__illustration--small">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/fish-desktop-smal.png 1x, img/catalog/fish-desktop-smal@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/catalog/fish-tablet-smal.png 1x, img/catalog/fish-tablet-smal@2x.png 2x">
-                    <img class="" src="img/catalog/fish-phone-smal.png" srcset="img/catalog/fish-phone-smal@2x.png 2x" alt="Пример нашей работы.">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/fish-desktop-small.webp 1x, img/catalog/fish-desktop-small@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/fish-tablet-small.webp 1x, img/catalog/fish-tablet-small@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/fish-phone-small.webp 1x, img/catalog/fish-phone-small@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" srcset="img/catalog/fish-desktop-small.png 1x, img/catalog/fish-desktop-small@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/fish-tablet-small.png 1x, img/catalog/fish-tablet-small@2x.png 2x">
+                    <img class="" src="img/catalog/fish-phone-small.png" srcset="img/catalog/fish-phone-small@2x.png 2x" alt="Пример нашей работы.">
                   </picture>
                 </a>
                   <a href="Cat-Energy-PRO-500-fish.html" class="product-card__link">
@@ -146,6 +162,10 @@
               <div class="product-card__wrapper">
                 <a href="Cat-Energy-PRO-1000-fish.html" class="product-card__illustration product-card__illustration--big">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/fish-desktop-big.webp 1x, img/catalog/fish-desktop-big@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/fish-tablet-big.webp 1x, img/catalog/fish-tablet-big@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/fish-phone-big.webp 1x, img/catalog/fish-phone-big@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="img/catalog/fish-desktop-big.png 1x, img/catalog/fish-desktop-big@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/fish-tablet-big.png 1x, img/catalog/fish-tablet-big@2x.png 2x">
                     <img class="" src="img/catalog/fish-phone-big.png" srcset="img/catalog/fish-phone-big@2x.png 2x" alt="Пример нашей работы.">
@@ -171,13 +191,17 @@
               </div>
                   <button class="product-card__button button-order">заказать</button>
             </li>
-            <li class="product-card product-card--smal">
+            <li class="product-card product-card--small">
               <div class="product-card__wrapper">
-                <a href="Cat-Energy-PRO-500-buckwheat.html" class="product-card__illustration product-card__illustration--smal">
+                <a href="Cat-Energy-PRO-500-buckwheat.html" class="product-card__illustration product-card__illustration--small">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/buckwheat-desktop-smal.png 1x, img/catalog/buckwheat-desktop-smal@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/catalog/buckwheat-tablet-smal.png 1x, img/catalog/buckwheat-tablet-smal@2x.png 2x">
-                    <img class="" src="img/catalog/buckwheat-phone-smal.png" srcset="img/catalog/buckwheat-phone-smal@2x.png 2x" alt="Пример нашей работы.">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/buckwheat-desktop-small.webp 1x, img/catalog/buckwheat-desktop-small@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/buckwheat-tablet-small.webp 1x, img/catalog/buckwheat-tablet-small@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/buckwheat-phone-small.webp 1x, img/catalog/buckwheat-phone-small@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" srcset="img/catalog/buckwheat-desktop-small.png 1x, img/catalog/buckwheat-desktop-small@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/buckwheat-tablet-small.png 1x, img/catalog/buckwheat-tablet-small@2x.png 2x">
+                    <img class="" src="img/catalog/buckwheat-phone-small.png" srcset="img/catalog/buckwheat-phone-small@2x.png 2x" alt="Пример нашей работы.">
                   </picture>
                 </a>
                   <a href="Cat-Energy-PRO-500-buckwheat.html" class="product-card__link">
@@ -204,6 +228,10 @@
               <div class="product-card__wrapper">
                 <a href="Cat-Energy-PRO-1000-buckwheat.html" class="product-card__illustration product-card__illustration--big">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/buckwheat-desktop-big.webp 1x, img/catalog/buckwheat-desktop-big@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/buckwheat-tablet-big.webp 1x, img/catalog/buckwheat-tablet-big@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/buckwheat-phone-big.webp 1x, img/catalog/buckwheat-phone-big@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="img/catalog/buckwheat-desktop-big.png 1x, img/catalog/buckwheat-desktop-big@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/buckwheat-tablet-big.png 1x, img/catalog/buckwheat-tablet-big@2x.png 2x">
                     <img class="" src="img/catalog/buckwheat-phone-big.png" srcset="img/catalog/buckwheat-phone-big@2x.png 2x" alt="Пример нашей работы.">
@@ -229,13 +257,17 @@
               </div>
                   <button class="product-card__button button-order">заказать</button>
             </li>
-            <li class="product-card product-card--smal">
+            <li class="product-card product-card--small">
               <div class="product-card__wrapper">
-                <a href="Cat-Energy-PRO-500-rice.html" class="product-card__illustration product-card__illustration--smal">
+                <a href="Cat-Energy-PRO-500-rice.html" class="product-card__illustration product-card__illustration--small">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/rice-desktop-smal.png 1x, img/catalog/rice-desktop-smal@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/catalog/rice-tablet-smal.png 1x, img/catalog/rice-tablet-smal@2x.png 2x">
-                    <img class="" src="img/catalog/rice-phone-smal.png" srcset="img/catalog/rice-phone-smal@2x.png 2x" alt="Пример нашей работы.">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/rice-desktop-small.webp 1x, img/catalog/rice-desktop-small@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/rice-tablet-small.webp 1x, img/catalog/rice-tablet-small@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/rice-phone-small.webp 1x, img/catalog/rice-phone-small@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" srcset="img/catalog/rice-desktop-small.png 1x, img/catalog/rice-desktop-small@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/rice-tablet-small.png 1x, img/catalog/rice-tablet-small@2x.png 2x">
+                    <img class="" src="img/catalog/rice-phone-small.png" srcset="img/catalog/rice-phone-small@2x.png 2x" alt="Пример нашей работы.">
                   </picture>
                 </a>
                   <a href="Cat-Energy-PRO-500-rice.html" class="product-card__link">
@@ -263,7 +295,7 @@
                 <h2 class="product-card__title product-card__title--show-more">Показать еще 100500 товаров</h2>
               </a>
               <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
-              <a href="catalog-show-more.html" class="button-show-more">показать все</a>
+              <a href="product-show-more.html" class="button-show-more">показать все</a>
             </li>
           </ul>
         </section>
@@ -312,7 +344,7 @@
     <footer class="main-footer">
       <section class="main-footer__contacts contacts">
         <div class="contacts__container">
-          <div class="contacts-wpapper">
+          <div class="contacts-wrapper">
             <h2 class="visually-hidden">Контакты</h2>
             <b class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</b>
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
